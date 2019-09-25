@@ -1,4 +1,4 @@
 # Analytic
 
- https://sijleljodal.github.io/Analytic/
+https://sijleljodal.github.io/Free-the-chicken/
  
