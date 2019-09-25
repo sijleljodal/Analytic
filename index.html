@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="no">
+
 <head>
    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148508481-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148508481-1"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-148508481-1');
-</script>
+      function gtag() {
+         dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-148508481-1');
+   </script>
 
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <meta name="description" content="En kubikkmeter med kylling, kyllingindustriens sanne ansikt.">
-   <meta name="subject" content="kylling, frittgående, høns, hønepøne, trangt, kyllingindustri, fjærkre, egg, plassmangel, ross 308, burhøne, verpehøne">
+   <meta name="subject"
+      content="kylling, frittgående, høns, hønepøne, trangt, kyllingindustri, fjærkre, egg, plassmangel, ross 308, burhøne, verpehøne">
    <meta name="author" content="Silje Ljødal, Helene Høie">
    <meta property="og:type" content="website">
    <meta property="og:image" content="img/hvitkylling.jpg">
@@ -23,13 +28,31 @@
 
    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
    <main>
       <div>
-<h1>Noe Kyllingrelatert</h1>
-<p>Høne pøne hvit og fin, legg ett egg i hånden min. Her er det noe mer tekst om kylling. Her er det enda mer tekst om kylling. </p>
-<img src="./img/hvitkylling.jpg" alt="Bilde av en hvit kylling" title="Hvit kylling koser seg">
+         <h1>Noe Kyllingrelatert</h1>
+         <p>Høne pøne hvit og fin, legg ett egg i hånden min. Her er det noe mer tekst om kylling. Her er det enda mer
+            tekst om kylling. </p>
+         <a onclick="getOutboundLink(); return false;">
+            <img src="./img/hvitkylling.jpg" alt="Bilde av en hvit kylling" title="Hvit kylling koser seg"></a>
       </div>
    </main>
+
+   <script>
+      //Function that registers a click on an outbound link in Analytics. Setting the transport method to 'beacon' lets the hit be sent
+      let getOutboundLink = function () {
+         gtag('event', 'click', {
+            'event_category': 'outbound',
+            'event_label': 'dyrevern.no',
+            'transport_type': 'beacon',
+            'event_callback': function () {
+               window.location = 'http://www.dyrevern.no/stott_oss';
+            }
+         });
+      }
+   </script>
 </body>
+
 </html>
