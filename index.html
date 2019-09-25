@@ -38,8 +38,7 @@
 
          <a
          href="http://www.dyrevern.no/stott_oss"
-         onclick="getOutboundLink('www.dyrevern.no/stott_oss')"
-         return false;
+         onclick="getOutboundLink('www.dyrevern.no/stott_oss');  return false;"
          target="_blank">
 
          <img src="./img/hvitkylling.jpg" alt="Bilde av en hvit kylling" title="Hvit kylling koser seg">
@@ -49,7 +48,7 @@
 
    <script>
       //Function that registers a click on an outbound link in Analytics. Setting the transport method to 'beacon' lets the hit be sent
-      let getOutboundLink = function () {
+      let getOutboundLink = function (url) {
          gtag('event', 'click', {
             'event_category': 'outbound',
             'event_label': 'dyrevern.no',
