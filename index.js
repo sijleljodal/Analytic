@@ -1,17 +1,25 @@
-var cube = document.querySelector('.cube');
-var radioGroup = document.querySelector('.radio-group');
-var currentClass = '';
+var xAngle = 0, yAngle = 0;
+document.addEventListener('keydown',
+function(e) {
+  switch(e.keycode) {
 
-function changeSide() {
-  var checkedRadio = radioGroup.querySelector(':checked');
-  var showClass = 'show-' + checkedRadio.value;
-  if ( currentClass ) {
-    cube.classList.remove( currentClass );
-  }
-  cube.classList.add( showClass );
-  currentClass = showClass;
-}
-// set initial side
-changeSide();
+    case 37:// left
+    yAngle -= 90;
+    break;
 
-radioGroup.addEventListener( 'change', changeSide );
+    case 38:// up
+    xAngle += 90;
+    break;
+
+    case 39:// right
+    yAngle += 90;
+    break;
+
+    case 40://down
+    xAngle -= 90;
+    break;
+  };
+
+  $('cube').style.webkitTransform = "rotateX("+xAngle+"deg) rotateY("+yAngle+"deg)";
+}, false);
+
