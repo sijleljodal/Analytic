@@ -5,6 +5,7 @@ body {
   font-family: Arial;
   box-sizing: border-box;
   background-color: #FFC75A;
+  height: 100vh;
 }
 
 main {
@@ -17,10 +18,11 @@ main a {
   cursor: pointer;
 }
 
-.logo {
-  position: absolute;
-  height: 120px;
-  width: 120px;
+#bakgrunn .logo img {
+  top: 10vh;
+  height: 70px;
+  width: 70px;
+  padding-left: 100px;
 }
 
 #fengselbilde {
