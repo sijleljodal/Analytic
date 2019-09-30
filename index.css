@@ -4,25 +4,47 @@ body {
   padding: 0;
   font-family: Arial;
   box-sizing: border-box;
-  background-color: #FFC75A;
+  background-color: #234955;
   height: 100vh;
 }
 
 main {
-  height: 100vh;
   display: grid;
+  grid-template-columns: 60px 1fr 60px;
   place-items: center;
 }
-
-main a {
-  cursor: pointer;
+main article.sosialemedier {
+  padding: 0 10px 0 10px;
+}
+main article.sosialemedier img {
+  width: 100%;
+}
+main #logo {
+  padding: 10px;
+}
+main .centergrid {
+  display: grid;
+  justify-items: center;
 }
 
-#bakgrunn .logo img {
-  top: 10vh;
-  height: 70px;
+header {
+  text-align: center;
+  padding: 15px;
+}
+
+.buttonbidra {
+  background-color: #122A32;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
   width: 70px;
-  padding-left: 100px;
 }
 
 #fengselbilde {
@@ -51,7 +73,6 @@ h2 {
   margin: 0 auto 100px;
   height: 400px;
   width: 400px;
-  color: #474934;
   -webkit-transition: -webkit-transform 50ms linear;
   -webkit-transform-style: preserve-3d;
   -webkit-transform: rotateX(-10deg) rotateY(20deg);
@@ -64,7 +85,7 @@ h2 {
 }
 
 .cube h2 {
-  color: #474934;
+  color: #e3d963;
   padding-top: 0;
   margin-top: 0;
 }
@@ -80,7 +101,7 @@ h2 {
   padding: 20px;
   font-size: 1em;
   line-height: 1em;
-  color: #474934;
+  background-color: #61313f;
   border: 1px solid #555;
   border-radius: 3px;
 }
@@ -108,6 +129,7 @@ h2 {
   -webkit-transform: rotateY(180deg) translateZ(200px);
   -moz-transform: rotateY(180deg) translateZ(200px);
   transform: rotateY(180deg) translateZ(200px);
+  background-color: #e3d963;
 }
 
 .cube > div:nth-child(5) {
