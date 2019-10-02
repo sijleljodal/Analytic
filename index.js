@@ -36,7 +36,7 @@ $(function(){
       };
 
   viewport.duration = function() {
-      var d = touch ? 50 : 500;
+      var d = touch ? 50 : 2000;
       viewport.el.style[transitionDurationProp] = d + "ms";
       return d;
   }();
@@ -108,6 +108,9 @@ $(function(){
               mouse.start.y = mouse.last.y;
           }
       }
+      let y = viewport.y - parseInt((mouse.start.x - movedMouse.x)/movementScaleFactor)
+      console.log(y)
+
 
       viewport.move({
           x: viewport.x + parseInt((mouse.start.y - movedMouse.y)/movementScaleFactor),
@@ -122,9 +125,6 @@ $(function(){
       }
   });
 
-  /* Just for fun */
-  if(!touch) {
-      $('.cube > div').eq(2).html('<object width="360" height="360"><param name="movie" value="http://www.youtube.com/v/MY5PkidV1cM?fs=1&amp;hl=en_GB&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/MY5PkidV1cM?fs=1&amp;hl=en_GB&amp;rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="360" height="360"></embed></object>');
-  }
+  
 
 });

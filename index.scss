@@ -6,6 +6,7 @@ body {
   box-sizing: border-box;
   background-color: #234955;
   height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 main {
@@ -51,13 +52,24 @@ header {
   width: 70px;
 }
 
-#fengselbilde {
+#diagram {
   height: 360px;
   width: 360px;
 }
 
 h2 {
   margin-top: 0;
+}
+
+p {
+  color: white;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+#borhone {
+  height: 60px;
+  width: 60px;
 }
 
 .viewport {
@@ -86,6 +98,7 @@ h2 {
   transition: transform 50ms linear;
   transform-style: preserve-3d;
   transform: rotateX(-10deg) rotateY(20deg);
+  cursor: pointer;
 }
 
 .cube h2 {
@@ -105,8 +118,8 @@ h2 {
   padding: 20px;
   font-size: 1em;
   line-height: 1em;
-  background-color: #61313f;
-  border: 1px solid #555;
+  background-color: #122a32;
+  border: 1px solid #122a32;
   border-radius: 3px;
 }
 
@@ -120,20 +133,28 @@ h2 {
   -webkit-transform: translateZ(200px);
   -moz-transform: translateZ(200px);
   transform: translateZ(200px);
+  
 }
 
 .cube>div:nth-child(3) {
   -webkit-transform: rotateY(90deg) translateZ(200px);
   -moz-transform: rotateY(90deg) translateZ(200px);
   transform: rotateY(90deg) translateZ(200px);
-  text-align: center;
+ 
 }
 
 .cube>div:nth-child(4) {
   -webkit-transform: rotateY(180deg) translateZ(200px);
   -moz-transform: rotateY(180deg) translateZ(200px);
   transform: rotateY(180deg) translateZ(200px);
-  background-color: #e3d963;
+  background-color: #61313f;
+}
+
+.cube>div:nth-child(5) {
+  -webkit-transform: rotateY(-90deg) translateZ(200px);
+  -moz-transform: rotateY(-90deg) translateZ(200px);
+  transform: rotateY(-90deg) translateZ(200px);
+  
 }
 
 .cube>div:nth-child(5) {
@@ -142,17 +163,11 @@ h2 {
   transform: rotateY(-90deg) translateZ(200px);
 }
 
-.cube>div:nth-child(5) p {
-  text-align: center;
-  font-size: 2.77em;
-  margin: 40px;
-  line-height: 60px;
-}
-
 .cube>div:nth-child(6) {
   -webkit-transform: rotateX(-90deg) rotate(180deg) translateZ(200px);
   -moz-transform: rotateX(-90deg) rotate(180deg) translateZ(200px);
   transform: rotateX(-90deg) rotate(180deg) translateZ(200px);
+  background-color: black;
 }
 
 object {
