@@ -6,32 +6,25 @@ body {
   box-sizing: border-box;
   background-color: #234955;
   height: 100vh;
-  font-family: Arial, Helvetica, sans-serif;
-}
+  font-family: Arial, Helvetica, sans-serif; }
 
 main {
   display: grid;
   grid-template-columns: 60px 1fr 60px;
-  place-items: center;
-}
-main article.sosialemedier {
-  padding: 0 10px 0 10px;
-}
-main article.sosialemedier img {
-  width: 100%;
-}
-main #logo {
-  padding: 10px;
-}
-main .centergrid {
-  display: grid;
-  justify-items: center;
-}
+  place-items: center; }
+  main article.sosialemedier {
+    padding: 0 10px 0 10px; }
+    main article.sosialemedier img {
+      width: 100%; }
+  main #logo {
+    padding: 10px; }
+  main .centergrid {
+    display: grid;
+    justify-items: center; }
 
 header {
   text-align: center;
-  padding: 15px;
-}
+  padding: 15px; }
 
 .buttonbidra {
   background-color: #122A32;
@@ -45,28 +38,23 @@ header {
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 10px;
-  width: 70px;
-}
+  width: 70px; }
 
 #diagram {
   height: 360px;
-  width: 360px;
-}
+  width: 360px; }
 
 h2 {
-  margin-top: 0;
-}
+  margin-top: 0; }
 
 p {
   color: white;
   font-size: 16px;
-  line-height: 25px;
-}
+  line-height: 25px; }
 
 #borhone {
   height: 60px;
-  width: 60px;
-}
+  width: 60px; }
 
 .viewport {
   -webkit-perspective: 800px;
@@ -77,8 +65,7 @@ p {
   -moz-transform: scale(0.75, 0.75);
   perspective: 800px;
   perspective-origin: 50% 200px;
-  transform: scale(0.75, 0.75);
-}
+  transform: scale(0.75, 0.75); }
 
 .cube {
   position: relative;
@@ -86,26 +73,23 @@ p {
   height: 400px;
   width: 400px;
   -webkit-transition: -webkit-transform 50ms linear;
+  transition: transform 50ms linear;
+  -moz-transition: -moz-transform 50ms linear;
   -webkit-transform-style: preserve-3d;
   -webkit-transform: rotateX(-10deg) rotateY(20deg);
-  -moz-transition: -moz-transform 50ms linear;
   -moz-transform-style: preserve-3d;
   -moz-transform: rotateX(-10deg) rotateY(20deg);
-  transition: transform 50ms linear;
   transform-style: preserve-3d;
   transform: rotateX(-10deg) rotateY(20deg);
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 .cube h2 {
   color: #e3d963;
   padding-top: 0;
-  margin-top: 0;
-}
+  margin-top: 0; }
 
 .cube a {
-  color: #474934;
-}
+  color: #474934; }
 
 .cube > div {
   position: absolute;
@@ -116,59 +100,47 @@ p {
   line-height: 1em;
   background-color: #122a32;
   border: 1px solid #122a32;
-  border-radius: 3px;
-}
+  border-radius: 3px; }
 
 .cube > div:first-child {
   -webkit-transform: rotateX(90deg) translateZ(200px);
   -moz-transform: rotateX(90deg) translateZ(200px);
-  transform: rotateX(90deg) translateZ(200px);
-}
+  transform: rotateX(90deg) translateZ(200px); }
 
 .cube > div:nth-child(2) {
   -webkit-transform: translateZ(200px);
   -moz-transform: translateZ(200px);
-  transform: translateZ(200px);
-}
+  transform: translateZ(200px); }
 
 .cube > div:nth-child(3) {
   -webkit-transform: rotateY(90deg) translateZ(200px);
   -moz-transform: rotateY(90deg) translateZ(200px);
-  transform: rotateY(90deg) translateZ(200px);
-}
+  transform: rotateY(90deg) translateZ(200px); }
 
 .cube > div:nth-child(4) {
   -webkit-transform: rotateY(180deg) translateZ(200px);
   -moz-transform: rotateY(180deg) translateZ(200px);
   transform: rotateY(180deg) translateZ(200px);
-  background-color: #61313f;
-}
+  background-color: #61313f; }
 
 .cube > div:nth-child(5) {
   -webkit-transform: rotateY(-90deg) translateZ(200px);
   -moz-transform: rotateY(-90deg) translateZ(200px);
-  transform: rotateY(-90deg) translateZ(200px);
-}
+  transform: rotateY(-90deg) translateZ(200px); }
 
 .cube > div:nth-child(5) {
   -webkit-transform: rotateY(-90deg) translateZ(200px);
   -moz-transform: rotateY(-90deg) translateZ(200px);
-  transform: rotateY(-90deg) translateZ(200px);
-}
+  transform: rotateY(-90deg) translateZ(200px); }
 
 .cube > div:nth-child(6) {
   -webkit-transform: rotateX(-90deg) rotate(180deg) translateZ(200px);
   -moz-transform: rotateX(-90deg) rotate(180deg) translateZ(200px);
   transform: rotateX(-90deg) rotate(180deg) translateZ(200px);
-  background-color: black;
-}
+  background-color: black; }
 
 object {
-  opacity: 0.5;
-}
+  opacity: 0.5; }
 
 object:hover {
-  opacity: 1;
-}
-
-/*# sourceMappingURL=index.css.map */
+  opacity: 1; }
