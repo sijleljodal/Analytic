@@ -6,7 +6,7 @@ body {
   box-sizing: border-box;
   background-color: #234955;
   height: 100vh;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 main {
@@ -63,13 +63,15 @@ h2 {
 
 p {
   color: white;
-  font-size: 16px;
-  line-height: 25px;
+  font-size: 28px;
+  line-height: 35px;
 }
 
-#borhone {
-  height: 60px;
-  width: 60px;
+
+
+#burhone {
+  height: 360px;
+  width: 360px;
 }
 
 .viewport {
@@ -149,7 +151,7 @@ p {
   -webkit-transform: rotateY(180deg) translateZ(200px);
   -moz-transform: rotateY(180deg) translateZ(200px);
   transform: rotateY(180deg) translateZ(200px);
-  background-color: #61313f;
+  
 }
 
 .cube>div:nth-child(5) {
@@ -169,7 +171,6 @@ p {
   -webkit-transform: rotateX(-90deg) rotate(180deg) translateZ(200px);
   -moz-transform: rotateX(-90deg) rotate(180deg) translateZ(200px);
   transform: rotateX(-90deg) rotate(180deg) translateZ(200px);
-  background-color: black;
 }
 
 object {
