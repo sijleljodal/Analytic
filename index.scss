@@ -6,7 +6,7 @@ body {
   box-sizing: border-box;
   background-color: #234955;
   height: 100vh;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto';
 }
 
 main {
@@ -23,11 +23,13 @@ main {
 
   #logo {
     padding: 10px;
+    height: 118px;
   }
 
   .centergrid {
     display: grid;
     justify-items: center;
+
   }
 }
 
@@ -36,6 +38,8 @@ header {
   text-align: center;
   padding: 15px;
 }
+
+
 
 .buttonbidra {
   background-color: #122A32;
@@ -52,10 +56,7 @@ header {
   width: 70px;
 }
 
-#diagram {
-  height: 360px;
-  width: 360px;
-}
+
 
 h2 {
   margin-top: 0;

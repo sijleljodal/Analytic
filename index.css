@@ -6,7 +6,7 @@ body {
   box-sizing: border-box;
   background-color: #234955;
   height: 100vh;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto";
 }
 
 main {
@@ -22,6 +22,7 @@ main article.sosialemedier img {
 }
 main #logo {
   padding: 10px;
+  height: 118px;
 }
 main .centergrid {
   display: grid;
@@ -46,11 +47,6 @@ header {
   cursor: pointer;
   border-radius: 10px;
   width: 70px;
-}
-
-#diagram {
-  height: 360px;
-  width: 360px;
 }
 
 h2 {
