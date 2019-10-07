@@ -169,4 +169,13 @@ object:hover {
   opacity: 1;
 }
 
+@media (max-width: 600px) {
+  article.sosialemedier {
+    padding: 0 10px 0 10px;
+  }
+  article.sosialemedier img {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=index.css.map */
