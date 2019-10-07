@@ -118,7 +118,7 @@ $(function () {
     $('.viewport').bind('move-viewport', function (evt, movedMouse) {
 
         // Reduce movement on touch screens
-        var movementScaleFactor = touch ? 4 : 2;
+        var movementScaleFactor = touch ? 3 : 2;
 
         if (!mouse.last) {
             mouse.last = mouse.start;
