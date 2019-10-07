@@ -1,5 +1,21 @@
 $(function () {
+    let sc = ""
+    let c = document.querySelector("#cube")
+    console.log(c)
+    resizeCube()
+    window.addEventListener('resize', resizeCube);
 
+    function resizeCube(){
+        if(window.innerWidth < 600) {
+            sc = "scale(.5) "
+            c.style.transform = "scale(.5) rotateX(-10deg) rotateY(20deg)"
+        }else{
+            sc = "scale(1) "
+            c.style.transform = "scale(1) rotateX(-10deg) rotateY(20deg)"
+        }    
+        console.log(sc)
+    }
+        
     var el = document.createElement('div'),
         transformProps = 'transform WebkitTransform MozTransform OTransform msTransform'.split(' '),
         transformProp = support(transformProps),
@@ -30,14 +46,14 @@ $(function () {
                 if (coords) {
                     if (typeof coords.x === "number") this.x = coords.x;
                     if (typeof coords.y === "number") this.y = coords.y;
-                }
+                 }
 
                 this.x = this.x > 90 ? 90 : this.x;
                 this.x = this.x < -90 ? -90 : this.x;
                 this.y = this.y > 180 ? 180 : this.y;
                 this.y = this.y < -180 ? -180 : this.y;
 
-                this.el.style[transformProp] = "rotateX(" + this.x + "deg) rotateY(" + this.y + "deg)";
+                this.el.style[transformProp] = sc + "rotateX(" + this.x + "deg) rotateY(" + this.y + "deg)";
             },
             reset: function () {
                 this.move({
@@ -143,4 +159,6 @@ $(function () {
             return v1 >= v2 ? true : false;
         }
     });
+
+    
 });

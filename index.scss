@@ -69,9 +69,8 @@ p {
 
 
 
-#burhone {
-  height: 360px;
-  width: 360px;
+section img{
+  width:100%;
 }
 
 .viewport {
@@ -105,16 +104,6 @@ p {
   cursor: pointer;
 }
 
-.cube h2 {
-  color: #e3d963;
-  padding-top: 0;
-  margin-top: 0;
-}
-
-.cube a {
-  color: #474934;
-}
-
 .cube>div {
   position: absolute;
   height: 360px;
@@ -125,6 +114,18 @@ p {
   background-color: #122a32;
   border: 1px solid #122a32;
   border-radius: 3px;
+}
+
+
+
+.cube h2 {
+  color: #e3d963;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.cube a {
+  color: #474934;
 }
 
 .cube>div:first-child {
@@ -161,12 +162,6 @@ p {
   
 }
 
-.cube>div:nth-child(5) {
-  -webkit-transform: rotateY(-90deg) translateZ(200px);
-  -moz-transform: rotateY(-90deg) translateZ(200px);
-  transform: rotateY(-90deg) translateZ(200px);
-}
-
 .cube>div:nth-child(6) {
   -webkit-transform: rotateX(-90deg) rotate(180deg) translateZ(200px);
   -moz-transform: rotateX(-90deg) rotate(180deg) translateZ(200px);
@@ -187,5 +182,11 @@ object:hover {
     img {
       display:none ;
     }
+  }
+  .cube {
+    transform: scale(.5);
+  }  
+  .cube > div {
+    transform:scale(.5);
   }
 }
