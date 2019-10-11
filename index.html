@@ -97,7 +97,8 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
                  'event_label': 'dyrevern',
                  'transport_type': 'beacon',
                  'event_callback': function () {
-                     window.location = 'http://www.dyrevern.no/stott_oss';
+                     window.open("http://www.dyrevern.no/stott_oss",'_blank');
+                     // window.location = 'http://www.dyrevern.no/stott_oss';
                  }
              });
          });
