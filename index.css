@@ -4,7 +4,7 @@ body {
   padding: 0;
   font-family: Arial;
   box-sizing: border-box;
-  background-color: #234955;
+  background-color: #4E666E;
   height: 100vh;
   font-family: "Roboto";
 }
@@ -19,6 +19,7 @@ main article.sosialemedier {
 }
 main article.sosialemedier img {
   width: 100%;
+  display: none;
 }
 main #logo {
   padding: 15px;
@@ -46,7 +47,7 @@ header {
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 2px;
-  width: 70px;
+  width: 90px;
 }
 
 h2 {
